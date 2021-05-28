@@ -1,5 +1,9 @@
 import React from 'react';
 
-const App = () => <div>App</div>;
+import Social from './components/Social';
+
+import './styles/global.scss';
+
+const App = () => <Social />;
 
 export default App;
