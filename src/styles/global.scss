@@ -4,7 +4,10 @@
 
   --social-background: #1d2434;
   --social-hover:      #D5B981;
-  --social-border:     rgba(255, 255, 255, .15);
+  --social-border:     #ffffff26;
+
+  --header-background: #1d2434;
+  --header-button:     #8e929a;
 }
 
 * {
@@ -20,12 +23,6 @@
   }
 }
 
-@media (max-width: 1080px) {
-  html {
-    font-size: 93.75%;
-  }
-}
-
 @media (max-width: 720px) {
   html {
     font-size: 87.5%;
@@ -34,6 +31,7 @@
 
 body {
   background-color: var(--gray-50);
+  height: 200vh;
 }
 
 body,
