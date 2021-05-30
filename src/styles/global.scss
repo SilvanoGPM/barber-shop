@@ -11,6 +11,10 @@
 
   --hero-background:   #d5b981;
   --hero-foreground:   #1d2434;
+
+  --footer-background:   #1d2434;
+  --footer-title:       #d5b981;
+  --footer-text:        #999999;
 }
 
 * {
@@ -34,7 +38,6 @@
 
 body {
   background-color: var(--gray-50);
-  height: 200vh;
 }
 
 body,

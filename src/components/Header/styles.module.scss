@@ -8,6 +8,7 @@
   padding: 0 1rem;
   position: fixed;
   z-index: 9999;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
 
   a {
     text-decoration: none;
@@ -99,11 +100,13 @@
     top: 60px;
     z-index: 2;
     transition: 0.45s ease-in-out;
+    box-shadow: none;
 
     &.isScrolled {
       top: 0;
       height: 60px;
       background-color: var(--header-background);
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
     }
   }
 }
