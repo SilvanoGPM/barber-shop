@@ -26,8 +26,9 @@
 
   ul {
     position: absolute;
-    top: 80px;
+    top: 75px;
     left: 0;
+    z-index: 9999;
     height: 0;
     overflow: hidden;
     transition: 0.3s ease-in-out;
@@ -35,6 +36,7 @@
     width: 100%;
     padding: 0 1rem;
     list-style: none;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 
     li {
       @media screen and (min-width: 960px) {
@@ -74,6 +76,7 @@
       width: auto;
       height: auto;
       background-color: transparent;
+      box-shadow: none;
     }
   }
 

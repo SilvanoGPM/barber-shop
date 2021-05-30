@@ -1,6 +1,8 @@
 :root {
   --white:             #ffffff;
   --black:             #000000;
+  --blue:                #1d2434;
+  --yellow:               #D5B981;
 
   --social-background: #1d2434;
   --social-hover:      #D5B981;
@@ -35,6 +37,11 @@
     font-size: 87.5%;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 body {
   background-color: var(--gray-50);

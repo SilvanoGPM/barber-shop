@@ -1,0 +1,27 @@
+.backTop {
+  width: 44px;
+  height: 44px;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border: none;
+  background-color: var(--yellow);
+  color: var(--blue);
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.25s ease-in-out;
+  pointer-events: none;
+  opacity: 0;
+
+  &:hover {
+    background-color: var(--blue);
+    color: var(--yellow);
+  }
+
+  &.active {
+    pointer-events: all;
+    opacity: 1;
+  }
+}
