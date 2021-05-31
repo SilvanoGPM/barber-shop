@@ -1,28 +1,8 @@
 import React from 'react';
 
+import { services } from 'data/fakeData';
 import Card from './components/Card';
 import styles from './styles.module.scss';
-
-const services = [
-  {
-    title: 'Hair Cut',
-    image: 'images/service-1.jpg',
-    description:
-      'Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non',
-  },
-  {
-    title: 'Beard Style',
-    image: 'images/service-2.jpg',
-    description:
-      'Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non',
-  },
-  {
-    title: 'Color & Wash',
-    image: 'images/service-3.jpg',
-    description:
-      'Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non',
-  },
-];
 
 const Service = () => (
   <section className={styles.service}>
