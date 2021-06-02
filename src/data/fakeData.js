@@ -1,3 +1,26 @@
+export const barbers = [
+  {
+    image: 'images/team-1.jpg',
+    name: 'Adam Phillips',
+    expert: 'Master Expert',
+  },
+  {
+    image: 'images/team-2.jpg',
+    name: 'Dylan Adams',
+    expert: 'Hair Barber',
+  },
+  {
+    image: 'images/team-3.jpg',
+    name: 'Gloria Edwards',
+    expert: 'Beard Expert',
+  },
+  {
+    image: 'images/team-4.jpg',
+    name: 'Josh Dunn',
+    expert: 'Color Expert',
+  },
+];
+
 export const testimonials = [
   {
     image: 'images/testimonial-1.jpg',
