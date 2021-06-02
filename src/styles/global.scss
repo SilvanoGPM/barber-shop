@@ -1,24 +1,11 @@
 :root {
-  --white: #ffffff;
-  --white-200: #f6f6f7;
-  --black: #000000;
-  --blue: #1d2434;
-  --yellow: #d5b981;
-  --gray: #797979;
-
-  --social-background: #1d2434;
-  --social-hover: #d5b981;
-  --social-border: #ffffff26;
-
-  --header-background: #1d2434;
-  --header-button: #8e929a;
-
-  --hero-background: #d5b981;
-  --hero-foreground: #1d2434;
-
-  --footer-background: #1d2434;
-  --footer-title: #d5b981;
-  --footer-text: #797979;
+  --white:      #ffffff;
+  --white-200:  #f6f6f7;
+  --yellow:     #d5b981;
+  --gray-100:   #8e929a;
+  --gray:       #797979;
+  --blue:       #1d2434;
+  --black:      #000000;
 }
 
 * {
