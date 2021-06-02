@@ -44,15 +44,11 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background-color: var(--gray-50);
-}
-
 body,
 input,
 textarea,
 button {
-  color: var(--gray-500);
+  color: var(--gray);
   font: 500 1rem 'Open Sans', sans-serif;
 }
 

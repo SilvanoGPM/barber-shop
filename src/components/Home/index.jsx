@@ -6,6 +6,7 @@ import Service from 'components/Service';
 import Price from 'components/Price';
 import Testimonial from 'components/Testimonial';
 import BarberTeam from 'components/BarberTeam';
+import Contact from 'components/Contact';
 
 const Home = () => (
   <main>
@@ -15,6 +16,7 @@ const Home = () => (
     <Price />
     <Testimonial />
     <BarberTeam />
+    <Contact />
   </main>
 );
 
