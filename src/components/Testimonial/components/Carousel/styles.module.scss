@@ -1,0 +1,40 @@
+.container {
+  max-width: 600px;
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+
+  button {
+    position: absolute;
+    bottom: -70px;
+    width: 60px;
+    height: 60px;
+    color: var(--yellow);
+    background-color: var(--blue);
+    font-size: 1.5rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+
+    @media screen and (min-width: 500px)  {
+      bottom: -40px;
+    }
+
+    &:hover {
+      color: var(--blue);
+      background-color: var(--yellow);
+    }
+  }
+}
+
+.nextBtn {
+  left: 80px;
+}
+
+.slide {
+  height: 400px;
+}
