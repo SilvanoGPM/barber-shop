@@ -52,6 +52,10 @@
       font-size: 1.2rem;
       transition: 0.35s ease-in-out background-color;
 
+      &.active {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
       &:hover {
         background-color: rgba(255, 255, 255, 0.1);
         transition: 0.25s ease-out background-color;

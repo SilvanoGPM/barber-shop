@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { AiOutlineMenu } from 'react-icons/ai';
 
 import routes from 'routes';
@@ -41,25 +41,39 @@ const Header = () => {
 
       <ul className={navbarOpen ? styles.isOpen : ''}>
         <li>
-          <Link to={routes.HOME}>Home</Link>
+          <NavLink to={routes.HOME} exact activeClassName={styles.active}>
+            Home
+          </NavLink>
         </li>
         <li>
-          <Link to={routes.ABOUT}>About</Link>
+          <NavLink to={routes.ABOUT} activeClassName={styles.active}>
+            About
+          </NavLink>
         </li>
         <li>
-          <Link to={routes.SERVICE}>Service</Link>
+          <NavLink to={routes.SERVICE} activeClassName={styles.active}>
+            Service
+          </NavLink>
         </li>
         <li>
-          <Link to={routes.PRICE}>Price</Link>
+          <NavLink to={routes.PRICE} activeClassName={styles.active}>
+            Price
+          </NavLink>
         </li>
         <li>
-          <Link to={routes.BARBER}>Barber</Link>
+          <NavLink to={routes.BARBER} activeClassName={styles.active}>
+            Barber
+          </NavLink>
         </li>
         <li>
-          <Link to={routes.GALLERY}>Gallery</Link>
+          <NavLink to={routes.GALLERY} activeClassName={styles.active}>
+            Gallery
+          </NavLink>
         </li>
         <li>
-          <Link to={routes.CONTACT}>Contact</Link>
+          <NavLink to={routes.CONTACT} activeClassName={styles.active}>
+            Contact
+          </NavLink>
         </li>
       </ul>
     </header>
