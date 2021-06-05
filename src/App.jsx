@@ -1,8 +1,10 @@
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 
+import routes from 'routes';
+import Home from './pages/Home';
 import Social from './components/Social';
 import Header from './components/Header';
-import Home from './components/Home';
 import Footer from './components/Footer';
 import BackTop from './components/BackTop';
 
@@ -12,7 +14,9 @@ const App = () => (
   <>
     <Social />
     <Header />
-    <Home />
+    <Switch>
+      <Route path={routes.HOME} exact component={Home} />
+    </Switch>
     <Footer />
     <BackTop />
   </>

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { AiOutlineMenu } from 'react-icons/ai';
 
+import routes from 'routes';
 import styles from './styles.module.scss';
 
 const Header = () => {
@@ -26,12 +28,12 @@ const Header = () => {
     <header
       className={`${styles.header} ${headerInTop ? styles.isScrolled : ''}`}
     >
-      <a href="/">
+      <Link to="/">
         <h1>
           Barber
           <span>X</span>
         </h1>
-      </a>
+      </Link>
 
       <button type="button" onClick={handleNavbarOpen}>
         <AiOutlineMenu />
@@ -39,25 +41,25 @@ const Header = () => {
 
       <ul className={navbarOpen ? styles.isOpen : ''}>
         <li>
-          <a href="#home">Home</a>
+          <Link to={routes.HOME}>Home</Link>
         </li>
         <li>
-          <a href="#about">About</a>
+          <Link to={routes.ABOUT}>About</Link>
         </li>
         <li>
-          <a href="#service">Service</a>
+          <Link to={routes.SERVICE}>Service</Link>
         </li>
         <li>
-          <a href="#price">Price</a>
+          <Link to={routes.PRICE}>Price</Link>
         </li>
         <li>
-          <a href="#barber">Barber</a>
+          <Link to={routes.BARBER}>Barber</Link>
         </li>
         <li>
-          <a href="#gallery">Gallery</a>
+          <Link to={routes.GALLERY}>Gallery</Link>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <Link to={routes.CONTACT}>Contact</Link>
         </li>
       </ul>
     </header>

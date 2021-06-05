@@ -7,6 +7,7 @@ import Price from 'components/Price';
 import Testimonial from 'components/Testimonial';
 import BarberTeam from 'components/BarberTeam';
 import Contact from 'components/Contact';
+import Spacer from 'components/Spacer';
 
 const Home = () => (
   <main>
@@ -17,6 +18,7 @@ const Home = () => (
     <Testimonial />
     <BarberTeam />
     <Contact />
+    <Spacer />
   </main>
 );
 
