@@ -1,0 +1,33 @@
+.pageHeader {
+  width: 100%;
+  height: 50vh;
+  background-color: var(--yellow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    margin: 5rem 0 1rem;
+  }
+
+  a {
+    font-size: 1.75rem;
+    text-decoration: none;
+    color: var(--blue);
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--white);
+    }
+  }
+}
+
+.home {
+  &::after {
+    content: '/';
+    margin: 0 1rem;
+    color: var(--blue);
+  }
+}
