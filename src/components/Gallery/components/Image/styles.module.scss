@@ -4,10 +4,12 @@
   transition: 0.3s ease-in-out;
   top: 0;
   cursor: pointer;
-  display: none;
+  transform: scale(0);
+  order: 1;
 
   &.active {
-    display: block;
+    transform: scale(1);
+    order: 0;
   }
 
   &:hover {

@@ -103,6 +103,7 @@
 
     input {
       flex: 1;
+      flex-shrink: 1;
       border: none;
       padding-left: 0.8rem;
       color: var(--blue);
@@ -111,13 +112,19 @@
     }
 
     button {
-      width: 92px;
+      flex: 1;
       margin: 0.4rem 0.4rem 0.4rem 0;
       border: 2px solid var(--blue);
       color: var(--blue);
       font-size: 1.2rem;
       transition: 0.25s ease-in-out;
       background-color: transparent;
+      flex-shrink: 1;
+
+      @media screen and (min-width: 400px) {
+        width: 92px;
+        flex: none;
+      }
 
       &:hover {
         background-color: var(--blue);
