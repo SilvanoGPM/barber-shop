@@ -1,0 +1,37 @@
+.image {
+  max-width: 350px;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  top: 0;
+  cursor: pointer;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+
+  &:hover {
+    top: -1rem;
+
+    &::after {
+      border-color: var(--yellow);
+    }
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 2rem;
+    background-color: transparent;
+    border: 1px solid var(--white);
+  }
+
+  img {
+    width: 100%;
+  }
+}

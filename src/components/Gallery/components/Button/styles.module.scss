@@ -1,0 +1,15 @@
+.button {
+  padding: 1rem;
+  border: 2px solid var(--blue);
+  color: var(--blue);
+  background-color: transparent;
+  font-size: 1.2rem;
+  transition: 0.2s ease-in-out;
+
+  &:hover,
+  &.active {
+    background-color: var(--blue);
+    color: var(--yellow);
+  }
+
+}

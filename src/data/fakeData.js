@@ -1,3 +1,36 @@
+export const images = [
+  {
+    id: 0,
+    image: 'images/portfolio-1.jpg',
+    category: 'Hair Cut',
+  },
+  {
+    id: 1,
+    image: 'images/portfolio-2.jpg',
+    category: 'Beard Style',
+  },
+  {
+    id: 2,
+    image: 'images/portfolio-3.jpg',
+    category: 'Color & Wash',
+  },
+  {
+    id: 3,
+    image: 'images/portfolio-4.jpg',
+    category: 'Hair Cut',
+  },
+  {
+    id: 4,
+    image: 'images/portfolio-5.jpg',
+    category: 'Beard Style',
+  },
+  {
+    id: 5,
+    image: 'images/portfolio-6.jpg',
+    category: 'Color & Wash',
+  },
+];
+
 export const barbers = [
   {
     image: 'images/team-1.jpg',
