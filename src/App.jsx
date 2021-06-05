@@ -8,6 +8,7 @@ import Service from './pages/Service';
 import Price from './pages/Price';
 import Barber from './pages/Barber';
 import Contact from './pages/Contact';
+import Page404 from './pages/Page404';
 import Social from './components/Social';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -27,6 +28,7 @@ const App = () => (
         <Route path={routes.PRICE} component={Price} />
         <Route path={routes.BARBER} component={Barber} />
         <Route path={routes.CONTACT} component={Contact} />
+        <Route component={Page404} />
       </Switch>
     </main>
     <Footer />
