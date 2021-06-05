@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import routes from 'routes';
 import Home from './pages/Home';
 import About from './pages/About';
+import Service from './pages/Service';
 import Social from './components/Social';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -15,10 +16,13 @@ const App = () => (
   <>
     <Social />
     <Header />
-    <Switch>
-      <Route path={routes.HOME} exact component={Home} />
-      <Route path={routes.ABOUT} component={About} />
-    </Switch>
+    <main>
+      <Switch>
+        <Route path={routes.HOME} exact component={Home} />
+        <Route path={routes.ABOUT} component={About} />
+        <Route path={routes.SERVICE} component={Service} />
+      </Switch>
+    </main>
     <Footer />
     <BackTop />
   </>

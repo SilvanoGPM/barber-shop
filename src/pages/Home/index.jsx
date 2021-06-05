@@ -14,7 +14,7 @@ const Home = () => {
   useTitle('Barber Shop');
 
   return (
-    <main>
+    <>
       <Hero />
       <AboutUs />
       <Service />
@@ -23,7 +23,7 @@ const Home = () => {
       <BarberTeam />
       <Contact />
       <Spacer />
-    </main>
+    </>
   );
 };
 
