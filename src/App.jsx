@@ -2,6 +2,8 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import routes from 'routes';
+
+import useScrollToTop from './hooks/useScrollToTop';
 import Home from './pages/Home';
 import About from './pages/About';
 import Service from './pages/Service';
@@ -17,25 +19,29 @@ import BackTop from './components/BackTop';
 
 import './styles/global.scss';
 
-const App = () => (
-  <>
-    <Social />
-    <Header />
-    <main>
-      <Switch>
-        <Route path={routes.HOME} exact component={Home} />
-        <Route path={routes.ABOUT} component={About} />
-        <Route path={routes.SERVICE} component={Service} />
-        <Route path={routes.PRICE} component={Price} />
-        <Route path={routes.BARBER} component={Barber} />
-        <Route path={routes.GALLERY} component={Gallery} />
-        <Route path={routes.CONTACT} component={Contact} />
-        <Route component={Page404} />
-      </Switch>
-    </main>
-    <Footer />
-    <BackTop />
-  </>
-);
+const App = () => {
+  useScrollToTop();
+
+  return (
+    <>
+      <Social />
+      <Header />
+      <main>
+        <Switch>
+          <Route path={routes.HOME} exact component={Home} />
+          <Route path={routes.ABOUT} component={About} />
+          <Route path={routes.SERVICE} component={Service} />
+          <Route path={routes.PRICE} component={Price} />
+          <Route path={routes.BARBER} component={Barber} />
+          <Route path={routes.GALLERY} component={Gallery} />
+          <Route path={routes.CONTACT} component={Contact} />
+          <Route component={Page404} />
+        </Switch>
+      </main>
+      <Footer />
+      <BackTop />
+    </>
+  );
+};
 
 export default App;
