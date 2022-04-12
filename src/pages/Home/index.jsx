@@ -9,6 +9,7 @@ import Testimonial from 'components/Testimonial';
 import BarberTeam from 'components/BarberTeam';
 import Contact from 'components/Contact';
 import Spacer from 'components/Spacer';
+import SlideIn from 'components/SlideIn';
 
 const Home = () => {
   useTitle('Barber Shop');
@@ -17,11 +18,27 @@ const Home = () => {
     <>
       <Hero />
       <AboutUs />
-      <Service />
-      <Price />
-      <Testimonial />
-      <BarberTeam />
-      <Contact />
+
+      <SlideIn x={-500}>
+        <Service />
+      </SlideIn>
+
+      <SlideIn x={500}>
+        <Price />
+      </SlideIn>
+
+      <SlideIn x={-500}>
+        <Testimonial />
+      </SlideIn>
+
+      <SlideIn x={500}>
+        <BarberTeam />
+      </SlideIn>
+
+      <SlideIn x={-500}>
+        <Contact />
+      </SlideIn>
+
       <Spacer />
     </>
   );
