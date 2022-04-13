@@ -9,7 +9,9 @@ import Testimonial from 'components/Testimonial';
 import BarberTeam from 'components/BarberTeam';
 import Contact from 'components/Contact';
 import Spacer from 'components/Spacer';
+
 import SlideIn from 'components/SlideIn';
+import ZoomIn from 'components/ZoomIn';
 
 const Home = () => {
   useTitle('Barber Shop');
@@ -19,9 +21,9 @@ const Home = () => {
       <Hero />
       <AboutUs />
 
-      <SlideIn x={-500}>
+      <ZoomIn>
         <Service />
-      </SlideIn>
+      </ZoomIn>
 
       <SlideIn x={500}>
         <Price />
