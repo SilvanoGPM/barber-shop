@@ -22,9 +22,7 @@ const Home = () => {
 
       <Service delay={300} />
 
-      <SlideIn x={500}>
-        <Price />
-      </SlideIn>
+      <Price />
 
       <SlideIn x={-500}>
         <Testimonial />
