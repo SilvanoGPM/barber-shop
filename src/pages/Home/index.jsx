@@ -11,7 +11,6 @@ import Contact from 'components/Contact';
 import Spacer from 'components/Spacer';
 
 import SlideIn from 'components/SlideIn';
-import ZoomIn from 'components/ZoomIn';
 
 const Home = () => {
   useTitle('Barber Shop');
@@ -21,9 +20,7 @@ const Home = () => {
       <Hero />
       <AboutUs />
 
-      <ZoomIn>
-        <Service />
-      </ZoomIn>
+      <Service delay={300} />
 
       <SlideIn x={500}>
         <Price />
