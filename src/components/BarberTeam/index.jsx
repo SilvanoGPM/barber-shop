@@ -9,9 +9,9 @@ import Card from './components/Card';
 
 import styles from './styles.module.scss';
 
-const BarberTeam = ({ delay }) => {
+const BarberTeam = ({ delay = 0, freezeOnceVisible = false }) => {
   const [elementRef, dataRef] = useIntersectionObserver({
-    freezeOnceVisible: true,
+    freezeOnceVisible,
   });
 
   const inView = dataRef?.isIntersecting;
@@ -53,10 +53,12 @@ const BarberTeam = ({ delay }) => {
 
 BarberTeam.defaultProps = {
   delay: 100,
+  freezeOnceVisible: false,
 };
 
 BarberTeam.propTypes = {
   delay: propTypes.number,
+  freezeOnceVisible: propTypes.bool,
 };
 
 export default BarberTeam;

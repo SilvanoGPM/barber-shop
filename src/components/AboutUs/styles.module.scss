@@ -18,17 +18,21 @@
     padding: 5rem 1rem;
   }
 
+  .figureContainer {
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+      width: 50%;
+      height: 500px;
+    }
+  }
+
   figure {
     --size: 85%;
     max-width: 450px;
     width: 100%;
     height: 450px;
     position: relative;
-
-    @media screen and (min-width: 768px) {
-      width: 50%;
-      height: 500px;
-    }
 
     img {
       position: absolute;
