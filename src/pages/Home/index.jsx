@@ -33,9 +33,7 @@ const Home = () => {
         <Testimonial />
       </SlideIn>
 
-      <SlideIn x={500}>
-        <BarberTeam />
-      </SlideIn>
+      <BarberTeam delay={250} />
 
       <SlideIn x={-500}>
         <Contact />

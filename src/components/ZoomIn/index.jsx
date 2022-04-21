@@ -10,16 +10,19 @@ const ZoomIn = ({ children, duration = 500, freezeOnceVisible = true }) => {
 
   const style = useSpring({
     config: { duration },
-    from: { scale: 0 },
+    from: { scale: 0.5, opacity: 0 },
     to: {
-      scale: dataRef?.isIntersecting ? 1 : 0,
+      scale: dataRef?.isIntersecting ? 1 : 0.5,
+      opacity: dataRef?.isIntersecting ? 1 : 0,
     },
   });
 
   return (
     <>
-      <div ref={elementRef} />
-      <animated.div style={style}>{children}</animated.div>
+      <animated.div style={style}>
+        <div ref={elementRef} />
+        {children}
+      </animated.div>
     </>
   );
 };

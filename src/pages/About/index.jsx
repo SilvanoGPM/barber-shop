@@ -12,7 +12,7 @@ const About = () => (
 
     <ZoomIn>
       <AboutUs />
-      <BarberTeam />
+      <BarberTeam delay={500} />
     </ZoomIn>
   </>
 );
