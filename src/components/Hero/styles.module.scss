@@ -40,7 +40,6 @@
   }
 
   .btnDownload {
-    margin-bottom: 2.6rem;
     padding: 0.75rem 1.5rem;
     border: 2px solid var(--blue);
     background-color: transparent;
@@ -71,9 +70,12 @@
     font-size: 4rem;
     color: var(--white);
     background-color: var(--blue);
-
     box-shadow: 0 0 0 0 rgba(29, 36, 52, 1);
 	  animation: pulse 1.5s infinite;
+
+    @media screen and (max-width: 400px) {
+      margin-top: 25px;
+    }
   }
 
   figure {
