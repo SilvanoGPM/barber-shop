@@ -41,7 +41,7 @@ const Service = ({ freezeOnceVisible = true, delay = 100 }) => {
   return (
     <section className={styles.service}>
       <SlideIn y={-50} delay={200}>
-        <span>Our Salon Services</span>
+        <span className={styles.supTitle}>Our Salon Services</span>
         <h2>Best Salon and Barber Services for You</h2>
       </SlideIn>
 

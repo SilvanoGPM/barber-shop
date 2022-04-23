@@ -33,7 +33,7 @@ const Price = ({ delay = 100 }) => {
   return (
     <section className={styles.price}>
       <SlideIn y={-100} delay={500}>
-        <span>Our Best Pricing</span>
+        <span className={styles.supTitle}>Our Best Pricing</span>
         <h2>We Provide Best Price in the City</h2>
       </SlideIn>
 
