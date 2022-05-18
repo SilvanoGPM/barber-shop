@@ -41,7 +41,7 @@ const BarberTeam = ({ delay = 0, freezeOnceVisible = false }) => {
           const { image, name, expert } = barbers[index];
 
           return (
-            <animated.div style={style}>
+            <animated.div key={name} style={style}>
               <Card key={name} image={image} name={name} expert={expert} />
             </animated.div>
           );

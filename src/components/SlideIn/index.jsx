@@ -55,7 +55,7 @@ SlideIn.defaultProps = {
 };
 
 SlideIn.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.elementType.isRequired,
   style: PropTypes.shape(),
   className: PropTypes.string,
   x: PropTypes.number,

@@ -1,3 +1,4 @@
+import SlideIn from 'components/SlideIn';
 import React, { useState } from 'react';
 
 import styles from './styles.module.scss';
@@ -29,50 +30,60 @@ const Contact = () => {
       </figure>
 
       <form onSubmit={handleFormSubmit}>
-        <div className={styles.formGroup}>
-          <input
-            onBlur={handleBlur(setNameError, 'Please enter your name')}
-            onFocus={handleFocus(setNameError)}
-            name="name"
-            type="text"
-            placeholder="Your Name"
-          />
-          <p>{nameError}</p>
-        </div>
+        <SlideIn delay={50}>
+          <div className={styles.formGroup}>
+            <input
+              onBlur={handleBlur(setNameError, 'Please enter your name')}
+              onFocus={handleFocus(setNameError)}
+              name="name"
+              type="text"
+              placeholder="Your Name"
+            />
+            <p>{nameError}</p>
+          </div>
+        </SlideIn>
 
-        <div className={styles.formGroup}>
-          <input
-            onBlur={handleBlur(setEmailError, 'Please enter your email')}
-            onFocus={handleFocus(setEmailError)}
-            name="email"
-            type="text"
-            placeholder="Your Email"
-          />
-          <p>{emailError}</p>
-        </div>
+        <SlideIn delay={150}>
+          <div className={styles.formGroup} y={30}>
+            <input
+              onBlur={handleBlur(setEmailError, 'Please enter your email')}
+              onFocus={handleFocus(setEmailError)}
+              name="email"
+              type="text"
+              placeholder="Your Email"
+            />
+            <p>{emailError}</p>
+          </div>
+        </SlideIn>
 
-        <div className={styles.formGroup}>
-          <input
-            onBlur={handleBlur(setSubjectError, 'Please enter a subject')}
-            onFocus={handleFocus(setSubjectError)}
-            name="subject"
-            type="text"
-            placeholder="Subject"
-          />
-          <p>{subjectError}</p>
-        </div>
+        <SlideIn delay={250} y={30}>
+          <div className={styles.formGroup}>
+            <input
+              onBlur={handleBlur(setSubjectError, 'Please enter a subject')}
+              onFocus={handleFocus(setSubjectError)}
+              name="subject"
+              type="text"
+              placeholder="Subject"
+            />
+            <p>{subjectError}</p>
+          </div>
+        </SlideIn>
 
-        <div className={styles.formGroup}>
-          <textarea
-            onBlur={handleBlur(setMessageError, 'Please enter a message')}
-            onFocus={handleFocus(setMessageError)}
-            name="message"
-            placeholder="Message"
-          />
-          <p>{messageError}</p>
-        </div>
+        <SlideIn delay={350} y={30}>
+          <div className={styles.formGroup}>
+            <textarea
+              onBlur={handleBlur(setMessageError, 'Please enter a message')}
+              onFocus={handleFocus(setMessageError)}
+              name="message"
+              placeholder="Message"
+            />
+            <p>{messageError}</p>
+          </div>
+        </SlideIn>
 
-        <button type="submit">Send Message</button>
+        <SlideIn delay={500} x={50}>
+          <button type="submit">Send Message</button>
+        </SlideIn>
       </form>
     </section>
   );

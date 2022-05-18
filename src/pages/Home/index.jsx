@@ -30,9 +30,7 @@ const Home = () => {
 
       <BarberTeam delay={250} />
 
-      <SlideIn x={-500}>
-        <Contact />
-      </SlideIn>
+      <Contact />
 
       <Spacer />
     </>

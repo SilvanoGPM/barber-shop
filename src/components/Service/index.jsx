@@ -51,7 +51,7 @@ const Service = ({ freezeOnceVisible = true, delay = 100 }) => {
           const { title, image, description } = services[index];
 
           return (
-            <animated.div style={style}>
+            <animated.div key={title} style={style}>
               <Card
                 key={title}
                 title={title}

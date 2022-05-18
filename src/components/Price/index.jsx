@@ -43,7 +43,7 @@ const Price = ({ delay = 100 }) => {
           const { name, image, price } = prices[index];
 
           return (
-            <animated.div style={style}>
+            <animated.div key={name} style={style}>
               <Card key={name} name={name} image={image} price={price} />
             </animated.div>
           );
