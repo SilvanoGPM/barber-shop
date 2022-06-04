@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 import routes from 'routes';
 import useTitle from 'hooks/useTitle';
+import SlideIn from 'components/SlideIn';
 
 import styles from './styles.module.scss';
 
@@ -12,13 +13,16 @@ const PageHeader = ({ title, link }) => {
 
   return (
     <div className={styles.pageHeader}>
-      <h1>{title}</h1>
-      <div>
+      <SlideIn>
+        <h1>{title}</h1>
+      </SlideIn>
+
+      <SlideIn delay={500} y={-30}>
         <Link className={styles.home} to={routes.HOME}>
           Home
         </Link>
         <Link to={link}>{title}</Link>
-      </div>
+      </SlideIn>
     </div>
   );
 };
