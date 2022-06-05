@@ -1,5 +1,5 @@
 <h1 align="center">Barber Shop</h1>
-<p align="center">Barber Shop é um template para barbearias, criado com React</p>
+<p align="center">Barber Shop é um template para barbearias, desenvolvido com React</p>
 <p align="center"><img width=300 src="./barber-shop.png" /></p>
 
 ## Tecnologias usadas :rocket:
