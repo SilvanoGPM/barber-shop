@@ -7,6 +7,7 @@
 - [React](https://pt-br.reactjs.org/) é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.
 - [React Icons](https://react-icons.github.io/react-icons/) biblioteca com vários ícones para usar.
 - [React Router](https://reactrouter.com/) é uma biblioteca para uso de rotas dinâmicas dentro da sua aplicação.
+- [React Spring](https://react-spring.dev/) é uma biblioteca para criação de animações.
 - [Sass](https://sass-lang.com/) é um preprocessador CSS.
 
 ## Como executar :hammer:
